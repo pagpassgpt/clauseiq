@@ -81,7 +81,7 @@ This avoids hiding a retrieval regression behind a high end-to-end score.
 
 ### Internal synthetic benchmark
 
-The current frozen synthetic benchmark contains 72 clauses, 155 queries and an 80-query holdout. The v5/v6 protocol tunes fusion weights only on development data.
+The current frozen synthetic benchmark contains 72 clauses, 155 queries and an 80-query holdout. The v7 protocol tunes fusion weights only on development data.
 
 Current frozen results:
 
@@ -99,9 +99,11 @@ These are **synthetic engineering-regression results, not legal accuracy claims*
 
 ### External legal benchmark
 
-The recommended independent retrieval benchmark is **ACORD**, which contains 114 attorney-written queries and more than 126,000 query-clause pairs with expert relevance ratings. It is distributed in BEIR format with lawyer-derived relevance grades. citeturn0search1turn0search5
+The recommended independent retrieval benchmark is [ACORD](https://huggingface.co/datasets/theatticusproject/acord), which contains 114 attorney-written queries and more than 126,000 query-clause pairs with expert relevance ratings. It is distributed in BEIR format with lawyer-derived relevance grades.
 
-CUAD is used as a complementary evidence/extraction benchmark: 510 commercial contracts, 13,000+ expert labels and 41 clause categories. citeturn0search0turn0search6
+[CUAD](https://www.atticusprojectai.org/cuad) is used as a complementary evidence/extraction benchmark: 510 commercial contracts, 13,000+ expert labels and 41 clause categories.
+
+ClauseIQ does not bundle those third-party datasets.
 
 ClauseIQ does not bundle those third-party datasets.
 
