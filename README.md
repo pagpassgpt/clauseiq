@@ -105,8 +105,6 @@ The recommended independent retrieval benchmark is [ACORD](https://huggingface.c
 
 ClauseIQ does not bundle those third-party datasets.
 
-ClauseIQ does not bundle those third-party datasets.
-
 Run an external benchmark after downloading the official dataset:
 
 ```bash
