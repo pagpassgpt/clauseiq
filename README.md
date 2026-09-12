@@ -92,8 +92,8 @@ Current frozen results:
 | Recall@5 | **95.00%** |
 | MRR | **72.44%** |
 | nDCG@5 | **77.71%** |
-| p50 latency | ~1 ms |
-| p95 latency | ~1.2 ms |
+| p50 latency | ~4.5 ms |
+| p95 latency | ~5.7 ms |
 
 These are **synthetic engineering-regression results, not legal accuracy claims**.
 
