@@ -1,5 +1,5 @@
 {
-  "version": "6.0",
+  "version": "7.0",
   "protocol": {
     "tuning_split": "development only",
     "primary_metric": "MRR",
@@ -44,8 +44,8 @@
     0.7934722222222222
   ],
   "latency_ms": {
-    "p50": 0.9884310002234997,
-    "p95": 1.127349999933358
+    "p50": 4.531800048425794,
+    "p95": 6.33840006776154
   },
   "multi_intent": {
     "queries": 8,
