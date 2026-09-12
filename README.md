@@ -1,4 +1,4 @@
-# ClauseIQ v6 — Evidence-First Contract Intelligence
+# ClauseIQ v7 — Evidence-First Contract Intelligence
 
 ClauseIQ is a research/production-style contract intelligence system built to answer a harder question than “can an LLM summarize a contract?”:
 
