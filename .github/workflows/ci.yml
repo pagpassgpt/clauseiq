@@ -1,0 +1,15 @@
+name: CI
+on: [push,pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -e ".[dev]"
+      - run: pytest
+      - run: PYTHONPATH=backend python -m eval.run_eval
+      - run: PYTHONPATH=backend python -m eval.benchmark_v5
+      - run: PYTHONPATH=backend python -m eval.benchmark_integrity
+      - run: PYTHONPATH=backend python -m eval.red_team

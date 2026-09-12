@@ -1,0 +1,11 @@
+rules:
+  - category: liability
+    level: critical
+    weight: 35
+    terms: ["unlimited liability", "uncapped liability"]
+    description: "Uncapped liability exposure"
+  - category: indemnity
+    level: high
+    weight: 25
+    terms: ["indemnify", "hold harmless"]
+    description: "Broad indemnification"

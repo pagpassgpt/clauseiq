@@ -1,0 +1,62 @@
+{
+  "cases": 4,
+  "mean_gold_recall": 1.0,
+  "failure_rate": 0,
+  "mean_tool_calls": 3.5,
+  "rows": [
+    {
+      "task": "Find the uncapped liability provision",
+      "gold": [
+        "c1"
+      ],
+      "retrieved": [
+        "c1"
+      ],
+      "gold_recall": 1.0,
+      "tool_calls": 3,
+      "failed_calls": 0,
+      "status": "completed"
+    },
+    {
+      "task": "Find the automatic renewal provision",
+      "gold": [
+        "c2"
+      ],
+      "retrieved": [
+        "c2"
+      ],
+      "gold_recall": 1.0,
+      "tool_calls": 3,
+      "failed_calls": 0,
+      "status": "completed"
+    },
+    {
+      "task": "Find termination for convenience",
+      "gold": [
+        "c3"
+      ],
+      "retrieved": [
+        "c3"
+      ],
+      "gold_recall": 1.0,
+      "tool_calls": 3,
+      "failed_calls": 0,
+      "status": "completed"
+    },
+    {
+      "task": "Find liability and indemnity",
+      "gold": [
+        "c1",
+        "c4"
+      ],
+      "retrieved": [
+        "c1",
+        "c4"
+      ],
+      "gold_recall": 1.0,
+      "tool_calls": 5,
+      "failed_calls": 0,
+      "status": "completed"
+    }
+  ]
+}

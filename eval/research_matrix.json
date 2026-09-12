@@ -1,0 +1,18 @@
+{
+  "policy": "External benchmark references are not ClauseIQ measurements unless reproduced locally with the stated dataset and configuration.",
+  "benchmarks": [
+    {"name":"ACORD","task":"expert legal clause retrieval","source":"https://huggingface.co/datasets/theatticusproject/acord","queries":114,"pairs":126662,"license":"CC BY 4.0","status":"runner-ready"},
+    {"name":"CUAD","task":"expert clause/evidence extraction","source":"https://huggingface.co/datasets/theatticusproject/cuad","contracts":510,"labels":"13000+","categories":41,"license":"CC BY 4.0","status":"runner-ready"},
+    {"name":"MLEB Contractual Clause Retrieval","task":"zero-shot contractual clause retrieval","source":"https://huggingface.co/datasets/isaacus/contractual-clause-retrieval","pairings":90,"status":"runner-ready"},
+    {"name":"MLEB Consumer Contracts QA","task":"contract question-to-clause retrieval","source":"https://huggingface.co/datasets/isaacus/mleb-consumer-contracts-qa","rows":478,"license":"CC BY-NC 4.0","status":"runner-ready"},
+    {"name":"Legal RAG Bench","task":"end-to-end legal RAG","source":"https://huggingface.co/datasets/isaacus/legal-rag-bench","passages":4876,"questions":100,"status":"future-adapter"}
+  ],
+  "published_reference": {
+    "model":"kmad00/legal-colbert-clause-retriever",
+    "benchmark":"MLEB Contractual Clause Retrieval",
+    "ndcg_at_10":0.8374,
+    "recall_at_10":0.9444,
+    "map":0.7777,
+    "note":"Published third-party result, not a ClauseIQ result. Use only as an external reference point."
+  }
+}

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clauseiq"
+version = "7.0.0"
+description = "Grounded, agentic AI contract review with hybrid retrieval and deterministic risk controls."
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.30,<1",
+  "pydantic>=2.7,<3",
+  "pydantic-settings>=2.2,<3",
+  "sqlalchemy>=2.0,<3",
+  "python-multipart>=0.0.9,<1",
+  "httpx>=0.27,<1",
+  "PyYAML>=6,<7",
+  "scikit-learn>=1.4,<2",
+  "numpy>=1.26,<3",
+  "pypdf>=5,<7",
+  "python-docx>=1.1,<2",
+  "psycopg[binary]>=3.2,<4",
+]
+[project.optional-dependencies]
+ml = ["sentence-transformers>=3,<6"]
+research = ["sentence-transformers>=3,<6", "pylate>=1.2,<2"]
+dev = ["pytest>=8,<9", "pytest-asyncio>=0.23,<2", "ruff>=0.6,<1"]
+
+[tool.pytest.ini_options]
+pythonpath = [".", "backend"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100

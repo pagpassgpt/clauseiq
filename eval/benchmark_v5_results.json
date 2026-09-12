@@ -1,0 +1,56 @@
+{
+  "version": "6.0",
+  "protocol": {
+    "tuning_split": "development only",
+    "primary_metric": "MRR",
+    "frozen_holdout": true,
+    "weights": [
+      0.0,
+      0.45,
+      0.55
+    ]
+  },
+  "dataset": {
+    "topics": 31,
+    "clauses": 72,
+    "queries": 155,
+    "development": 42,
+    "internal_test": 33,
+    "holdout": 80
+  },
+  "development": {
+    "recall@1": 0.7142857142857143,
+    "recall@3": 0.9047619047619048,
+    "recall@5": 0.9523809523809523,
+    "mrr": 0.809906116918312,
+    "ndcg@5": 0.8445756698372672
+  },
+  "internal_test": {
+    "recall@1": 0.6060606060606061,
+    "recall@3": 0.8787878787878788,
+    "recall@5": 0.9696969696969697,
+    "mrr": 0.7559974747474747,
+    "ndcg@5": 0.8093496348248601
+  },
+  "holdout": {
+    "recall@1": 0.5625,
+    "recall@3": 0.85,
+    "recall@5": 0.95,
+    "mrr": 0.7244178827444957,
+    "ndcg@5": 0.7771334597044603
+  },
+  "holdout_mrr_bootstrap95": [
+    0.6513060035842294,
+    0.7934722222222222
+  ],
+  "latency_ms": {
+    "p50": 0.9884310002234997,
+    "p95": 1.127349999933358
+  },
+  "multi_intent": {
+    "queries": 8,
+    "mean_gold_recall@5": 0.75,
+    "all_gold_retrieved_rate": 0.625
+  },
+  "note": "Synthetic benchmark; external expert-labeled evaluation is provided as a reproducible runner."
+}

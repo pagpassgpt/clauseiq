@@ -1,0 +1,8 @@
+{
+  "iterations": 500,
+  "grounding_exact_rate": 1.0,
+  "unsupported_evidence_rejection_rate": 1.0,
+  "risk_determinism_rate": 1.0,
+  "policy_match_count": 1,
+  "all_gates_pass": true
+}
