@@ -101,7 +101,7 @@ def run():
         rows.append({'query':case.query,'split':case.split,'rank':rank.index(case.relevant)+1 if case.relevant in rank else None})
     hold_mrr=[score(rank_with_weights(base,c.query,tuning['weights']),c.relevant)[3] for c in cases if c.split=='holdout']
     out={
-      'version':'6.0',
+      'version':'7.0',
       'protocol':{'tuning_split':'development only','primary_metric':'MRR','frozen_holdout':True,'weights':tuning['weights']},
       'dataset':{'topics':len(TOPICS),'clauses':len(clauses),'queries':len(cases),'development':sum(split_case(c)=='dev' for c in cases),'internal_test':sum(split_case(c)=='test' for c in cases),'holdout':sum(split_case(c)=='holdout' for c in cases)},
       'development':tuning['dev_metrics'],
